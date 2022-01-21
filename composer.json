@@ -1,5 +1,5 @@
 {
-    "name": "fashionphile/email-to-cloud",
+    "name": "fashionphiletest/email-to-cloud",
     "description": "Connection to Fashionphil's email service",
     "type": "composer-plugin",
     "authors": [
