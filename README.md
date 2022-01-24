@@ -13,13 +13,25 @@
  - While on the FPemail directory run following command to install packages 
    - Run `composer update`
  
-### 5) Usage
+### 4) Usage
 - To connect to the lambda and SFMC you must be on a valid IP address (FP VPN)
   - Otherwise, you'll only get 403 responses
 - Pass required data to SendEmail function and your data will be validated and email sent
 - One of the best way to develop is with tests run `vendor/bin/phpunit` to run testing suit
-- Code example of a use case assuming the package has been included in folder.
-  - `new SendEmail(###email-code-here###, '##enviorment##')->to(##user-email##, ##user-id##)->setData([###email-data-array###])->send()`
 
-### 4) Tests
+### 5) Tests
 - To run all tests RUN `vendor/bin/phpunit`
+
+
+### 6) Example
+$email = new \FPemail\SendEmail('asldkjf');
+        $email->to('tanner.robertson@fashionphile.com', 322087);
+        $data = [
+                "sku__c" => "BD595034",
+                "discount_tier__c" => "70",
+                "shopping_bag_count__c" => "3",
+                "item_discount_amount__c" => "20",
+                "original_product_price__c" => "1600",
+            ];
+        $email->setData($data);
+        $email->send();
