@@ -1,8 +1,5 @@
 <?php
 
-$dotenv = \Dotenv\Dotenv::create(__DIR__ . '/..');
-$dotenv->load();
-
 return [
     'production' => [
         'url' => 'https://production-uri.com/transactional/journey',
