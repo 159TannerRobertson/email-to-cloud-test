@@ -1,10 +1,7 @@
 {
     "name": "fashionphiletest/email-to-cloud",
     "description": "Connection to Fashionphil's cloud email service",
-    "type": "composer-plugin",
-    "extra": {
-        "class": "FPemail\\src\\SendEmail"
-    },
+    "type": "library",
     "authors": [
         {
             "name": "Tanner Robertson",
