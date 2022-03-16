@@ -20,8 +20,7 @@
     },
     "require": {
         "php": ">=7.0",
-        "guzzlehttp/guzzle": ">=6.1",
-        "vlucas/phpdotenv": ">=3.6"
+        "guzzlehttp/guzzle": ">=6.1"
     },
     "require-dev": {
         "orchestra/testbench": ">=3.7",
